@@ -28,11 +28,11 @@ const Projects = () => {
   ];
   return (
     <div>
-      <section className="md:px-40 mb-10 dark:bg-black">
+      <section className="md:px-20 dark:bg-black">
         <h1 className="font-bold  text-2xl md:text-4xl text-center mb-4 dark:text-white">
-          My <span className="text-red-500">Projects</span>
+          My Projects
           <br />
-          <span className=" text-xl font-normal dark:text-gray-300">
+          <span className=" text-2xl dark:text-red-500">
             That Showcases My Skills & Passion
           </span>
         </h1>
@@ -62,7 +62,7 @@ const Projects = () => {
 
               <button
                 className="border-2 border-red-500 p-2 px-10 rounded-lg mt-3 text-white
-              cursor-pointer block mx-auto
+              cursor-pointer block mx-auto 
               hover:bg-red-500 hover-font-bold hover:scale-110 transition-all duration-300"
               >
                 {project.link}

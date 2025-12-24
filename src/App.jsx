@@ -8,17 +8,13 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
-  const [darkmode, setDrakMode] = useState(false);
-
   return (
     <>
-      <div className={darkmode ? "dark" : ""}>
-        <Navbar />
-        <Home />
-        <Projects />
-        <Contact />
-        <Footer />
-      </div>
+      <Navbar />
+      <Home />
+      <Projects />
+      <Contact />
+      <Footer />
     </>
   );
 }

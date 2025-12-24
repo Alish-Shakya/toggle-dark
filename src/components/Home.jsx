@@ -6,14 +6,14 @@ import Linkedin from "./icons/Linkedin";
 
 const Home = () => {
   return (
-    <div className="px-6 py-12 md:px-40 min-h-screen dark:bg-black">
+    <div className="px-6 py-12 md:px-20 min-h-screen dark:bg-secondary">
       <div className="flex flex-col-reverse md:flex-row justify-between items-center">
         {/* Right Side - Text */}
         <div className="w-full md:w-[50%]">
-          <h1 className="text-4xl md:text-6xl font-bold text-black dark:text-white">
+          <h1 className="text-4xl md:text-4xl font-bold text-black dark:text-white">
             Hello,
           </h1>
-          <span className="block font-semibold text-2xl md:text-4xl text-red-500 mt-2 md:mt-4">
+          <span className="block font-semibold text-2xl md:text-2xl text-red-500 mt-2 md:mt-4">
             I'm Alish Shakya
           </span>
 
@@ -33,9 +33,9 @@ const Home = () => {
           </div>
 
           {/* Button */}
-          <div className="mt-8 gap-10  flex md:mt-10 ">
+          <div className="mt-8 md:gap-20 gap-8 flex md:mt-10 ">
             <button
-              className="border-2 rounded-lg p-2 px-6 border-red-500 
+              className="border-2 rounded-lg p-2 px-5 md:px-8 border-red-500 
             hover:bg-red-500 hover:text-white  hover:font-bold
             hover:scale-105
             transition-all duration-200
@@ -47,7 +47,7 @@ const Home = () => {
             </button>
 
             <button
-              className="border-2 border-red-500 rounded-lg p-2 px-6
+              className="border-2 border-red-500 rounded-lg p-2 px-8
                    hover:bg-red-500 hover:text-white
                    hover:scale-105
                    hover:font-bold
@@ -61,7 +61,7 @@ const Home = () => {
         </div>
 
         {/* Left Side - Image */}
-        <div className="w-full md:w-[30%] flex justify-center md:justify-end mb-6 md:mb-0">
+        <div className="w-full md:w-[25%] flex justify-center md:justify-end mb-6 md:mb-0">
           <img
             src="/1.jpg"
             alt="image"

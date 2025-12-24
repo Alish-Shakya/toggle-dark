@@ -6,7 +6,7 @@ import Linkedin from "./icons/Linkedin";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white px-10 py-10 mt-20">
+    <footer className="bg-black text-white px-20 py-10">
       <div className="flex flex-col md:flex-row justify-between items-center gap-6">
         {/* Left */}
         <h2 className="text-xl font-bold">Alish Shakya</h2>

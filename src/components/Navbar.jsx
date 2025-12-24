@@ -13,48 +13,56 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="p-5 dark:bg-black md:px-20 md:py-10">
+    <nav className="p-5 md:px-20 md:py-10 bg-primary dark:bg-secondary">
       <div className="flex justify-between items-center">
+        {/* Logo */}
         <Link to="/" className="font-bold text-4xl dark:text-red-500">
           Shakya
         </Link>
 
-        {/* Desktop */}
+        {/* Desktop Menu */}
         <div className="hidden md:flex space-x-10">
           {navLinks.map((link) => (
             <NavLink
               key={link.path}
               to={link.path}
-              // className={({ isActive }) =>
-              //   isActive
-              //     ? "text-red-500 font-semibold"
-              //     : "hover:text-red-300 transition"
-              // }
-              className="text-black dark:text-white hover:text-red-500 hover:font-bold transition"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-red-500 font-bold"
+                  : "text-black dark:text-white hover:text-red-500 transition"
+              }
             >
               {link.name}
             </NavLink>
           ))}
         </div>
 
-        {/* Mobile button */}
-        <button onClick={() => setOpen(!open)} className="text-3xl md:hidden">
-          ☰
-        </button>
+        {/* Right actions */}
+        <div className="flex items-center space-x-4">
+          <ThemeToggle />
 
-        {/* <ThemeToggle /> */}
+          {/* Mobile button */}
+          <button
+            onClick={() => setOpen(!open)}
+            className="text-3xl md:hidden dark:text-white"
+          >
+            ☰
+          </button>
+        </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden mt-6 flex flex-col space-y-5 text-center bg-gray-100 p-5 rounded-lg">
+        <div className="md:hidden mt-6 flex flex-col space-y-5 text-center p-5 rounded-lg bg-gray-100 dark:bg-gray-900">
           {navLinks.map((link) => (
             <NavLink
               key={link.path}
               to={link.path}
               onClick={() => setOpen(false)}
               className={({ isActive }) =>
-                isActive ? "text-red-500 font-semibold" : "hover:text-red-600"
+                isActive
+                  ? "text-red-500 font-semibold"
+                  : "text-black dark:text-white hover:text-red-500"
               }
             >
               {link.name}

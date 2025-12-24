@@ -4,7 +4,7 @@ import { FaSun, FaMoon, FaDesktop } from "react-icons/fa";
 const THEME_OPTIONS = ["light", "dark", "system"];
 
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState("system");
+  // const [theme, setTheme] = useState("system");
 
   // On load, check saved theme or default to system
   useEffect(() => {

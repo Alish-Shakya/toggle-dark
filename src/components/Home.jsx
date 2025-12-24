@@ -6,18 +6,18 @@ import Linkedin from "./icons/Linkedin";
 
 const Home = () => {
   return (
-    <div className="px-6 py-12 md:px-20 min-h-screen dark:bg-secondary">
+    <div className="px-6 py-12 md:px-20 min-h-screen  bg-primaryBackground dark:bg-secondaryBackground">
       <div className="flex flex-col-reverse md:flex-row justify-between items-center">
         {/* Right Side - Text */}
         <div className="w-full md:w-[50%]">
-          <h1 className="text-4xl md:text-4xl font-bold text-black dark:text-white">
+          <h1 className="text-4xl md:text-4xl font-bold text-textPrimary dark:text-textSecondary">
             Hello,
           </h1>
           <span className="block font-semibold text-2xl md:text-2xl text-red-500 mt-2 md:mt-4">
             I'm Alish Shakya
           </span>
 
-          <p className="mt-4 md:mt-5 text-sm md:text-base text-black dark:text-gray-300 font-sans">
+          <p className="mt-4 md:mt-5 text-sm md:text-base text-textPrimary dark:text-textSecondary font-sans">
             I create clean, efficient, and user-friendly web applications using
             modern technologies like React and Node.js. Passionate about turning
             ideas into seamless digital experiences. Let’s build something great
@@ -40,7 +40,7 @@ const Home = () => {
             hover:scale-105
             transition-all duration-200
             cursor-pointer
-            dark:text-white dark:font-bold
+            text-textPrimary dark:text-textSecondary
           "
             >
               Hire Me
@@ -53,7 +53,7 @@ const Home = () => {
                    hover:font-bold
                    transition-all duration-300
                    cursor-pointer
-                   dark:text-white dark:font-bold"
+                   text-textPrimary dark:text-textSecondary"
             >
               View CV
             </button>

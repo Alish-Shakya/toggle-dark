@@ -3,6 +3,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-primary: #ffffff;
-  --color-secondary: #000000;
+  --color-primaryBackground: #ffffff;
+  --color-secondaryBackground: #000000;
+
+  --color-textPrimary: #000000;
+  --color-textSecondary: #ffffff;
 }

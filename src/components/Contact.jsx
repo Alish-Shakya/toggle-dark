@@ -11,13 +11,18 @@ const Contact = () => {
               Contact Information
             </h1>
 
-            <p className="text-sm"> Address: kapan, Kathmandu</p>
-            <p className="text-sm"> Email: alishshakya44@gmail.com</p>
-            <p className="text-sm">
+            <p className="text-sm  text-textPrimary dark:text-textSecondary">
+              {" "}
+              Address: kapan, Kathmandu
+            </p>
+            <p className="text-sm   text-textPrimary dark:text-textSecondary">
+              {" "}
+              Email: alishshakya44@gmail.com
+            </p>
+            <p className="text-sm  text-textPrimary dark:text-textSecondary">
               Feel free to reach out to us with any queries or inqueries!
             </p>
-          </div>
-
+          </div>{" "}
           {/* form  */}
           <div className="w-full md:w-[60%] px-4">
             <form className="space-y-4 border-2 rounded-2xl p-4 sm:p-10 border-red-600 w-full">

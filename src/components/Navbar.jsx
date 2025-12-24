@@ -13,10 +13,13 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="p-5 md:px-20 md:py-10 bg-primary dark:bg-secondary">
+    <nav className="p-5 md:px-20 md:py-10 bg-primaryBackground dark:bg-secondaryBackground ">
       <div className="flex justify-between items-center">
         {/* Logo */}
-        <Link to="/" className="font-bold text-4xl dark:text-red-500">
+        <Link
+          to="/"
+          className="font-bold text-4xl text-textPrimary dark:text-textSecondary"
+        >
           Shakya
         </Link>
 
@@ -29,7 +32,7 @@ const Navbar = () => {
               className={({ isActive }) =>
                 isActive
                   ? "text-red-500 font-bold"
-                  : "text-black dark:text-white hover:text-red-500 transition"
+                  : "text-textPrimary dark:text-textSecondary hover:text-red-500 transition"
               }
             >
               {link.name}

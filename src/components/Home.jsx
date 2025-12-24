@@ -6,16 +6,18 @@ import Linkedin from "./icons/Linkedin";
 
 const Home = () => {
   return (
-    <div className="px-6 py-12 md:px-40 min-h-screen">
+    <div className="px-6 py-12 md:px-40 min-h-screen dark:bg-black">
       <div className="flex flex-col-reverse md:flex-row justify-between items-center">
         {/* Right Side - Text */}
         <div className="w-full md:w-[50%]">
-          <h1 className="text-4xl md:text-6xl font-bold">Hello,</h1>
+          <h1 className="text-4xl md:text-6xl font-bold text-black dark:text-white">
+            Hello,
+          </h1>
           <span className="block font-semibold text-2xl md:text-4xl text-red-500 mt-2 md:mt-4">
             I'm Alish Shakya
           </span>
 
-          <p className="mt-4 md:mt-5 text-sm md:text-base text-gray-900 font-sans">
+          <p className="mt-4 md:mt-5 text-sm md:text-base text-black dark:text-gray-300 font-sans">
             I create clean, efficient, and user-friendly web applications using
             modern technologies like React and Node.js. Passionate about turning
             ideas into seamless digital experiences. Let’s build something great
@@ -38,6 +40,7 @@ const Home = () => {
             hover:scale-105
             transition-all duration-200
             cursor-pointer
+            dark:text-white dark:font-bold
           "
             >
               Hire Me
@@ -49,7 +52,8 @@ const Home = () => {
                    hover:scale-105
                    hover:font-bold
                    transition-all duration-300
-                   cursor-pointer"
+                   cursor-pointer
+                   dark:text-white dark:font-bold"
             >
               View CV
             </button>

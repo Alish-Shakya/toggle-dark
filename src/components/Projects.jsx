@@ -28,15 +28,15 @@ const Projects = () => {
   ];
   return (
     <div>
-      <section className="md:px-40 mb-10">
-        <h1 className="font-bold  text-2xl md:text-4xl text-center mb-4">
+      <section className="md:px-40 mb-10 dark:bg-black">
+        <h1 className="font-bold  text-2xl md:text-4xl text-center mb-4 dark:text-white">
           My <span className="text-red-500">Projects</span>
           <br />
-          <span className=" text-xl font-normal">
+          <span className=" text-xl font-normal dark:text-gray-300">
             That Showcases My Skills & Passion
           </span>
         </h1>
-        <p className="mt-4 md:mt-5 text-sm md:text-base text-gray-900 font-sans mb-8 mx-auto text-center w-[70%] justify-center">
+        <p className="mt-4 md:mt-5 text-sm md:text-base text-gray-900 dark:text-gray-300 font-sans mb-8 mx-auto text-center w-[70%] justify-center">
           These projects are a modern web application built using React and
           other contemporary technologies. It focuses on creating a clean,
           responsive user interface with smooth interactions and optimized

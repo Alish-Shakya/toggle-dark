@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () => {
   return (
     <>
-      <div className="flex items-center justify-center p-5">
+      <div className="flex items-center justify-center p-5 dark:bg-black dark:text-white">
         <div className="flex flex-col md:flex-row md:px-20 py-10 gap-20 items-center">
           {/* jnformation */}
           <div className="px-8 w-full space-y-6">

@@ -13,9 +13,9 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="p-5 md:px-20 md:py-10">
+    <nav className="p-5 dark:bg-black md:px-20 md:py-10">
       <div className="flex justify-between items-center">
-        <Link to="/" className="font-bold text-4xl">
+        <Link to="/" className="font-bold text-4xl dark:text-red-500">
           Shakya
         </Link>
 
@@ -25,11 +25,12 @@ const Navbar = () => {
             <NavLink
               key={link.path}
               to={link.path}
-              className={({ isActive }) =>
-                isActive
-                  ? "text-red-500 font-semibold"
-                  : "hover:text-red-300 transition"
-              }
+              // className={({ isActive }) =>
+              //   isActive
+              //     ? "text-red-500 font-semibold"
+              //     : "hover:text-red-300 transition"
+              // }
+              className="text-black dark:text-white hover:text-red-500 hover:font-bold transition"
             >
               {link.name}
             </NavLink>
